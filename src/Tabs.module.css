@@ -1,0 +1,39 @@
+.container {
+  color: #ccc;
+  border: 1px solid #383838;
+  max-width: 600px;;
+}
+
+.item {
+  padding: 1rem;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.content {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  animation: pulse 2s;
+}
+
+@keyframes pulse {
+	0% {
+    opacity: 0;
+	}
+
+  75% {
+    opacity: .75;
+  }
+
+	100% {
+    opacity: 1;
+	}
+}
+
+.active {
+  border-bottom: 2px solid #be1ab6;
+}
