@@ -3,3 +3,12 @@
   grid-auto-flow: column;
   border-bottom: 1px solid #383838;
 }
+
+.verticalTabs {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}

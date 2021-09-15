@@ -1,16 +1,6 @@
-import { createContext, useContext, useState } from "react"
+import { useState } from "react"
+import { TabsContext, useTabsContext } from "./hooks/useTabsContext"
 import s from './Tabs.module.css'
-
-const TabsContext = createContext()
-
-function useTabsContext() {
-  const context = useContext(TabsContext)
-
-  if(!context) {
-    throw Error('Context is being used outside Tabs component')
-  }
-  return context
-}
 
 export function Tabs({ children, defaultActive }) {
 
